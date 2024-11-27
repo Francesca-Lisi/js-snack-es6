@@ -3,7 +3,7 @@
 // con le seguenti proprietà: nome e peso.
 // Stampare a schermo la bici con peso minore.
 
-const biciclette = [
+const bikes = [
   {
     nome: 'Tarmac',
     peso: 7.9
@@ -33,3 +33,15 @@ const biciclette = [
     peso: 8.8
   }
 ]
+
+let lighterBike = bikes[0]
+console.log(lighterBike)
+
+for (let i = 0; i < bikes.length; i++){
+  const bike = bikes[i];
+  if (bike.peso < lighterBike.peso){
+    lighterBike = bike;
+  }
+}
+console.log(lighterBike)
+document.getElementById('result').innerHTML = `La bici da corsa più leggera è la ${lighterBike.nome}, con un peso di soli ${lighterBike.peso} kg. `
