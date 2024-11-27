@@ -48,3 +48,17 @@ const teams = [
     falli: 0
   },
 ]
+
+
+const max = 200;
+function getRandomNumber(max) {
+  return Math.floor(Math.random()* (max - 0 + 1) + 0)
+}
+
+for (let i = 0; i < teams.length; i++){
+  const team = teams[i];
+  team.points = getRandomNumber(max);
+  team.falli = getRandomNumber(max);
+console.log(team)
+}
+
