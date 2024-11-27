@@ -9,3 +9,42 @@
 
 // Infine, creiamo un nuovo array i cui elementi 
 // contengono solo nomi e falli subiti e stampiamo tutto in console.
+
+
+const teams = [
+  {
+    name: 'Barcellona',
+    points: 0,
+    falli: 0
+  },
+  {
+    name: 'Real Madrid',
+    points: 0,
+    falli: 0
+  },
+  {
+    name: 'Liverpool',
+    points: 0,
+    falli: 0
+  },
+  {
+    name: 'Milan',
+    points: 0,
+    falli: 0
+  },
+  {
+    name: 'Manchester City',
+    points: 0,
+    falli: 0
+  },
+  {
+    name: 'Juventus',
+    points: 0,
+    falli: 0
+  },
+  {
+    name: 'Inter',
+    points: 0,
+    falli: 0
+  },
+]
