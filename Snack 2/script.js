@@ -55,18 +55,18 @@ function getRandomNumber(max) {
   return Math.floor(Math.random()* (max - 0 + 1) + 0)
 }
 
-const newArray = [];
-const newObject = {};
+const teamFalli = [];
 
 for (let i = 0; i < teams.length; i++){
   const team = teams[i];
   team.points = getRandomNumber(max);
   team.falli = getRandomNumber(max);
-  newObject.name = team.name;
-  newObject.falli = team.falli;
-  newArray.push(newObject)
+  teamFalli.push({
+    name: team.name,
+    falli: team.falli
+  })
 
 console.log(team)
 }
 
-console.log(newArray)
+console.log(teamFalli)
